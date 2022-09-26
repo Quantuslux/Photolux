@@ -7,12 +7,12 @@
 
 header nav {
     background-color: black;
-    position: sticky;
-    top: 0;
+    /* position: sticky; */
+    /* top: 0; */
     /* color: aliceblue; */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 header nav ul{
@@ -242,7 +242,7 @@ h3{
 
 
 }
-footer nav a:hover{
+footer section a:hover{
     transform: scale(1.5,1.5);
     transition: transform .5s;
 
@@ -293,9 +293,9 @@ footer nav a:hover{
         margin-bottom: 20px;
         justify-content: space-around;
         align-content: space-around;
-
-        
+              
         }
+
     /* portada */
         .div1 { grid-area: 1 / 1 / 4 / 2; 
                 border-color: rgb(158, 14, 220);
@@ -349,6 +349,20 @@ footer nav a:hover{
                     transform: scale(1.5,1.5);
                     transition: transform .5s;
                 }
+
+    /* servicios */
+        div article p {
+            margin-top: 20px;
+           
+        }
+        #servicesBackCollage{
+            background-image: linear-gradient(to bottom, rgb(92, 92, 92), rgb(194, 145, 255));
+        
+        } 
+        #serviciosCollage{
+            display: flex;
+            align-self: flex-start;
+        }
     
     /* 360 booth */
         .div3 { grid-area: 1 / 2 / 2 / 3;
@@ -359,14 +373,9 @@ footer nav a:hover{
                 width: 405px; 
                 display: flex;
                 align-items: center;
+                justify-content: center;
 
-        }
-
-        #serviciosCollage{
-            display: flex;
-            align-self: flex-start;
-        }
-    
+        }       
 
     /* mirror booth */
         .div4 { grid-area: 2 / 2 / 3 / 3; 
@@ -377,8 +386,8 @@ footer nav a:hover{
                 width: 405px; 
                 display: flex;
                 align-items: center;
-                
-                
+                justify-content: center;
+                            
         }
 
     /* infltatable */
@@ -390,9 +399,10 @@ footer nav a:hover{
                 width: 405px;
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 
         }
-
+       
     /* ask us */
         .div6 { grid-area: 4 / 2 / 5 / 4;
                 border-color: rgb(158, 14, 220);
@@ -400,16 +410,15 @@ footer nav a:hover{
                 border-width: 5px;
                 height: 200px;
                 width: 820px;
-                
-                
+                margin-bottom: 10px;
                 
         }
             .flexcollage {
                 display: flex; 
                 direction: row;
-                /* */
                 width: 50em;
                 /* align-content: center; */
+                
                 
                 
             }
@@ -417,7 +426,8 @@ footer nav a:hover{
             #letrasCollage{
                 color: rgb(64, 20, 106);
                 text-align: left;
-                margin-top: 20px;
+                margin-right: 20px;
+                margin-top: 10px;
             }
             #askcollage{
                 background-image: linear-gradient(to bottom, rgb(92, 92, 92), rgb(194, 145, 255));
@@ -425,8 +435,7 @@ footer nav a:hover{
                 width: 250px;
                 border-style: solid;
                 border-color: black;
-                border-width: .25em;
-            
+                border-width: .25em;  
             
             }
     /* formulario */
@@ -437,5 +446,20 @@ footer nav a:hover{
                 height: 650px;
                 width: 400px; 
                 display: flex;
+                justify-content: space-around;
                 align-items: center;
+                text-align: center;
+        }
+        #formCollage{
+            height: 500px;
+            width: 350px;
+            background-image: linear-gradient(to bottom, rgb(92, 92, 92), rgb(194, 145, 255));
+            border-style: solid;
+            border-color: black;
+            border-width: .25em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            
         }
