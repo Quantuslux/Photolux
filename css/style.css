@@ -333,9 +333,10 @@ footer section a:hover{
            
         }
          
-            background-image: linear-gradient(to bottom, rgb(92, 92, 92), rgb(194, 145, 255));
-        
+        #servicesBackCollage{
+             background-image: linear-gradient(to bottom, rgb(92, 92, 92), rgb(194, 145, 255));
         } 
+        
         #serviciosCollage{
             display: flex;
             align-self: flex-start;
@@ -583,7 +584,6 @@ footer section a:hover{
         width: 95vw;
         
         }
-        
         .div1 { grid-area: 1 / 1 / 4 / 2;
             height: 600px;
         
@@ -619,14 +619,8 @@ footer section a:hover{
             flex-direction: column;
             align-items: center;
             
-           
-            
         }
-        /* #askcollage{
-            background-image: linear-gradient(to bottom, rgb(92, 92, 92), rgb(194, 145, 255));
-            height: 125px;
-            width: 300px;
-        } */
+        
         .div7 { grid-area: 6 / 1 / 11 / 2; 
                 height: 1000px;
         }
