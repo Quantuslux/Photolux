@@ -1,0 +1,42 @@
+/* HEADER */
+.header{
+    display: flex;
+    width: 100vw;
+    padding: 10px;
+    background-color: black;
+    nav{
+    width: 100vw;
+        .lista li{
+            list-style-type: none;
+            margin: .5em;
+            padding: .5em;
+            border: solid 3px rgb(119, 26, 207);
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Domine', serif;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            transition: .5s;
+        }
+
+    }
+}
+
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 5px;
+    
+}
+
+header nav ul li:hover{
+    transform: scale(1.2, 1.2);
+}
+
+.mainimage{
+
+    width: 100px;
+}

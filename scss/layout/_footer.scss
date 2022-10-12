@@ -1,0 +1,21 @@
+.footerCollage{
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.footer{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+
+
+}
+footer section a:hover{
+    transform: scale(1.5,1.5);
+    transition: transform .5s;
+
+}

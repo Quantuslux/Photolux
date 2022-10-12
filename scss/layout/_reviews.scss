@@ -1,0 +1,23 @@
+.reviews{
+    background-image: radial-gradient(rgb(194, 145, 255),rgb(92, 92, 92)); 
+    color: aliceblue;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50%;
+    border-width: 2px;
+    text-align: center;
+    width: 4em;
+    height: 4em;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    display: flex;
+    align-items: center;
+    transform: rotate(30deg);
+    transition: .5s;
+   
+}
+.reviews:hover{
+    transform: scale(1.2, 1.2);
+
+}
