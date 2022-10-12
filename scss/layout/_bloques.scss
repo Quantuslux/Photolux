@@ -1,15 +1,16 @@
 .background {
-    background-image: linear-gradient(to bottom, rgb(92, 92, 92), rgb(194, 145, 255));    
-    height: 500px;
-    width: 600px;
+    background-image: $background-block;    
+    height: 60%;
+    width: 60%;
     margin: 1em;
     border-style: solid;
     border-color: black;
     border-width: .25em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;    
+    @include flex (column,space-around,center)   
+}
+
+main section article:hover{
+    background-image: $background-hover;
 }
 
 #letras{
@@ -17,19 +18,12 @@
     font-family: 'Domine', serif;
     text-align: center;
     margin: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column, center, center)
 
 }
 .flex-container{
-    display: flex;
-    direction: column;
+    @include flex(column, center, center);
     flex-wrap: wrap;
-    width: 50em;
-    justify-content: center;
-     
 }
 
 

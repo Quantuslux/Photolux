@@ -15,7 +15,7 @@
             font-weight: bold;
             font-size: 20px;
             text-align: center;
-            font-family: 'Domine', serif;
+            font-family: 'Orbitron', serif;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -39,4 +39,17 @@ header nav ul li:hover{
 .mainimage{
 
     width: 100px;
+}
+
+@media (max-width: 768px) and (min-width: 350px) {
+
+    .header{
+    
+        @include flex (column, center, center)
+        
+    }
+    
+    .navBar {
+        @include flex (column, center, center)
+    }
 }

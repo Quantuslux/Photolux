@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 * {
   margin: 0 auto;
   padding: 0 auto;
@@ -20,7 +21,7 @@
       font-weight: bold;
       font-size: 20px;
       text-align: center;
-      font-family: 'Domine', serif;
+      font-family: 'Orbitron', serif;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -37,10 +38,22 @@ header nav ul li:hover {
 .mainimage {
   width: 100px; }
 
+@media (max-width: 768px) and (min-width: 350px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
 .background {
   background-image: linear-gradient(to bottom, #5c5c5c, #c291ff);
-  height: 500px;
-  width: 600px;
+  height: 60%;
+  width: 60%;
   margin: 1em;
   border-style: solid;
   border-color: black;
@@ -49,6 +62,9 @@ header nav ul li:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: center; }
+
+main section article:hover {
+  background-image: linear-gradient(to top, #5c5c5c, #c291ff); }
 
 #letras {
   color: #0b0b0b;
@@ -62,10 +78,10 @@ header nav ul li:hover {
 
 .flex-container {
   display: flex;
-  direction: column;
-  flex-wrap: wrap;
-  width: 50em;
-  justify-content: center; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
 
 /* H's  */
 h1 {
@@ -73,12 +89,12 @@ h1 {
   background-color: black;
   color: blueviolet;
   font-size: xx-large;
-  font-family: 'Domine', serif;
+  font-family: 'Orbitron', serif;
   text-align: center; }
 
 h2 {
   text-decoration-color: black;
-  font-family: 'Domine', serif;
+  font-family: 'Orbitron', serif;
   -ms-text-size-adjust: 10%;
   text-align: center; }
 
@@ -91,7 +107,7 @@ h4 {
   background-color: black;
   color: blueviolet;
   font-size: large;
-  font-family: 'Domine', serif;
+  font-family: 'Orbitron', serif;
   text-align: center; }
 
 .reviews {
@@ -115,6 +131,15 @@ h4 {
 .reviews:hover {
   transform: scale(1.2, 1.2); }
 
+.faqBackground {
+  background-image: linear-gradient(to bottom, #5c5c5c, #c291ff);
+  height: 160px;
+  width: 300px;
+  margin: 1em;
+  border-style: solid;
+  border-color: black;
+  border-width: .25em; }
+
 .footerCollage {
   border-style: solid;
   border-color: black;
@@ -131,12 +156,3 @@ h4 {
 footer section a:hover {
   transform: scale(1.5, 1.5);
   transition: transform .5s; }
-
-.faqBackground {
-  background-image: linear-gradient(to bottom, #5c5c5c, #c291ff);
-  height: 160px;
-  width: 300px;
-  margin: 1em;
-  border-style: solid;
-  border-color: black;
-  border-width: .25em; }
