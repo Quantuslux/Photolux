@@ -1,8 +1,7 @@
 *{
     margin: 0 auto;
-    /* padding: 0 auto; */
+    padding: 0 auto;
     box-sizing: border-box;
-    /*overflow-x: hidden;*/
 }
 
 /* HEADER */
@@ -63,6 +62,7 @@ h1 {
 
 h2{
     text-decoration-color: black;
+    font-family: 'Domine', serif;
     -ms-text-size-adjust: 10%;
     text-align: center;
 }
@@ -81,11 +81,12 @@ h4 {
     text-align: center;
 }
 
+/*index section*/
 
 .background {
     background-image: linear-gradient(to bottom, rgb(92, 92, 92), rgb(194, 145, 255));    
     height: 500px;
-    width: 550px;
+    width: 600px;
     margin: 1em;
     border-style: solid;
     border-color: black;
@@ -93,12 +94,43 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+    align-items: center;    
 }
-#centrado{
+
+#letras{
+    color: rgb(11, 11, 11);
+    font-family: 'Domine', serif;
+    text-align: center;
+    margin: 5%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+
 }
+.flex-container{
+    display: flex;
+    direction: column;
+    flex-wrap: wrap;
+    width: 50em;
+    justify-content: center;
+     
+}
+
+
+
+/*Carousel*/
+
+.carousel-caption{
+ background-color: rgba(0, 0, 0, 0.251);
+}
+.carousel-item{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+
 
 /* Servicios */
 
@@ -128,46 +160,13 @@ h4 {
     text-align: center;   
 }
 
-#imagenCentrada{
-    display: flex;
-    align-items: center;
-    width: 40%;
-}
 
-#letras{
-    color: rgb(11, 11, 11);
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-}
-
-main section article p {
-    font-style: normal;
-    font-family: 'Domine', serif;
-    text-decoration-color: black;
-    text-align: center;
-    margin: 5px;
-}
-
-.cont-img img{
-    width: 30%;
-    height: 5%;
-    margin: 1%;
-    border-radius: 20px;
-    
-}
 
 a {
     text-decoration: none;
 }
 
-
-article{
-    margin: 1em;
-}
 
 .formulario{
     width: 5em;
@@ -232,19 +231,9 @@ footer section a:hover{
     border-style: solid;
     border-color: black;
     border-width: .25em;
-    display: flex;
-
 
 }
 
-.flex-container{
-    display: flex;
-    direction: column;
-    flex-wrap: wrap;
-    width: 50em;
-    justify-content: center;
-     
-}
 
 
 /* COLLAGE */
@@ -576,16 +565,36 @@ footer section a:hover{
         padding: 0px;
         overflow-x: hidden; 
     }
-    nav{
-        width: 95vw;
+    .header{
+        display: flex;
+        width: 100vw;
+        background-color: black;
         
+    }
+    
+    nav{
+        width: 100vw;
+    }
+    
+    .navBar {
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 1px;
+        
+    }
+
+    .lista li{
+        
+        margin: .2em;
+        padding: .2em;
+        font-size: 25px;
     }
     .parent {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(10, 1fr);
         height: 2000px;
-        width: 95vw;
+        width: 800px;
         
         }
         .div1 { grid-area: 1 / 1 / 4 / 2;
