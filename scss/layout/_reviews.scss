@@ -1,13 +1,13 @@
 .reviews{
-    background-image: radial-gradient(rgb(194, 145, 255),rgb(92, 92, 92)); 
+    background-image: $background-block;
     color: aliceblue;
     border-style: solid;
     border-color: black;
     border-radius: 50%;
     border-width: 2px;
     text-align: center;
-    width: 4em;
-    height: 4em;
+    width: 5em;
+    height: 5em;
     position: fixed;
     bottom: 2em;
     right: 2em;

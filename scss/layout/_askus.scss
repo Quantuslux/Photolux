@@ -7,5 +7,17 @@
     border-style: solid;
     border-color: black;
     border-width: .25em;
+}
 
+.askFlex{
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) and (min-width: 350px) {
+    .faqBackground{
+        background-image: $background-block;
+        height: 30%;
+        width: 90%;
+    }
 }

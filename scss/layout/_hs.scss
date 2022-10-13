@@ -11,9 +11,8 @@ h1 {
 
 h2{
     text-decoration-color: black;
-    font-family: 'Orbitron', serif;
+    @extend h1;
     -ms-text-size-adjust: 10%;
-    text-align: center;
 }
 
 h3{
@@ -26,6 +25,10 @@ h4 {
     background-color: black;
     color:blueviolet;
     font-size:large;
-    font-family: 'Orbitron', serif;
-    text-align: center;
+    @extend h1;
+    
+}
+
+a {
+    text-decoration: none;
 }

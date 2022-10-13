@@ -1,0 +1,264 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: 850px;
+    width: 100%;
+    margin-top :20px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    align-content: space-around;
+          
+    }
+
+/* portada */
+    .div1 { grid-area: 1 / 1 / 4 / 2; 
+            border-color: rgb(158, 14, 220);
+            border-style: solid;
+            border-width: 5px;
+            height: 635px;
+            width: 400px;
+            @include flex (column, center, center);
+            background-color: black;
+    }
+    .portada{
+        margin: 10%;
+        border-style: solid;
+        border-color: black;
+        border-width: 5em;
+
+    }
+
+    
+    .introCollage{
+        background-image: $background-block;
+        text-align: center;
+        margin-top: 20%;
+    }
+
+/* book now */
+    .div2 { grid-area: 4 / 1 / 5 / 2;
+            border-color: rgb(158, 14, 220);
+            border-style: solid;
+            border-width: 5px;
+            height: 200px; 
+            width: 400px;
+            display: flex;
+            align-items: center;
+            background-color: black;
+    }
+
+/* servicios */
+    div article p {
+        margin-top: 20px;
+       
+    }
+     
+    #servicesBackCollage{
+         background-image: $background-block;
+    } 
+    
+    #serviciosCollage{
+        display: flex;
+        align-self: flex-start;
+    }
+
+/* 360 booth */
+    .div3 { grid-area: 1 / 2 / 2 / 3;
+            border-color: rgb(158, 14, 220);
+            border-style: solid;
+            border-width: 5px;
+            height: 205px; 
+            width: 405px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+    }       
+
+/* mirror booth */
+    .div4 { grid-area: 2 / 2 / 3 / 3; 
+            @extend .div3;
+        
+    }
+
+/* infltatable */
+    .div5 { grid-area: 3 / 2 / 4 / 3;
+            @extend .div3;
+    }
+   
+/* ask us */
+    .div6 { grid-area: 4 / 2 / 5 / 4;
+            border-color: rgb(158, 14, 220);
+            border-style: solid;
+            border-width: 5px;
+            background-color: black;
+            height: 200px;
+            width: 820px;
+            margin-bottom: 10px;
+            @include flex (column, center,center)
+            
+    }
+        .flexcollage {
+            @include flex (row, center,center)
+        }
+
+        #letrasCollage{
+            color: rgb(7, 7, 7);
+            text-align: left;
+            margin-right: 20px;
+            margin-top: .5px;
+        }
+        #askcollage{
+            background-image: $background-block;
+            height: 140px;
+            width: 250px;
+             
+        }
+/* formulario */
+    .div7 { grid-area: 1 / 3 / 4 / 4;
+            border-color: rgb(158, 14, 220);
+            border-style: solid;
+            border-width: 5px; 
+            height: 635px;
+            width: 400px; 
+            @include flex (column, space-around, center);
+            text-align: center;
+            background-color: black;
+    }
+    #formCollage{
+        height: 550px;
+        width: 350px;
+        background-image: linear-gradient(to bottom, rgb(92, 92, 92), rgb(194, 145, 255));
+        border-style: solid;
+        border-color: black;
+        border-width: .25em;
+        @include flex (column, center,center);
+          
+    }
+
+@media (max-width: 768px) and (min-width: 350px) {
+
+        html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden; 
+        }
+    
+        
+        .header{
+            display: flex;
+            flex-direction: column;
+            
+            width: 95vw;
+            padding: 10px;
+            background-color: black;
+            
+        }
+        
+        nav{
+            width: 95vw;
+            
+        }
+        
+        .navBar {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1px;
+            
+        }
+    
+    
+        .parent {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(10, 1fr);
+            height: 2500px;
+            width: 95vw;
+        }
+        
+                .div1 { grid-area: 1 / 1 / 3 / 2;
+                    height: 500px;
+                    width: 95vw;
+                    display: flex;
+                    align-items: center;
+                    }
+                    .introCollage{
+                        margin-top: 1%;
+                        
+                    }
+                 
+                .div2 { grid-area: 3 / 1 / 4 / 2; 
+                        height: 250px; 
+                        width: 95vw;
+                    }
+    
+                .div3 { grid-area: 4 / 1 / 5 / 2; 
+                        height: 250px; 
+                        width: 95vw; 
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                    }
+                .div4 { grid-area: 5 / 1 / 6 / 2;
+                        height: 250px; 
+                        width: 95vw; 
+                        display: flex;
+                        align-items: center;
+                        justify-content: center; 
+                                   
+                    }
+                .div5 { grid-area: 6 / 1 / 7 / 2; 
+                        height: 250px; 
+                        width: 95vw; 
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                .div6 { grid-area: 7 / 1 / 9 / 2;
+                        height: 500px;
+                        width: 95vw;       
+                    }
+                    .flexcollage {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    #askcollage{
+                        background-image: linear-gradient(to bottom, rgb(92, 92, 92), rgb(194, 145, 255));
+                        height: 125px;
+                        width: 300px;
+            
+                    }
+                .div7 { grid-area: 9 / 1 / 11 / 2;
+                        height: 500px;
+                        width: 95vw;; 
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        text-align: center;
+                    }
+                    #formCollage{
+                        height: 400px;
+                        width: 330px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                    .flex-container{
+                    display: flex;
+                    direction: column;
+                    justify-content: flex-start;
+                    }
+                    .background {    
+                        height: 400px;
+                        width: 95vw;                  
+                    }
+                    .footerCollage{
+                        width: 95vw; 
+                    }
+    }

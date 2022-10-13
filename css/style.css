@@ -4,6 +4,14 @@
   padding: 0 auto;
   box-sizing: border-box; }
 
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.251); }
+
+.carousel-item {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black; }
+
 /* HEADER */
 .header {
   display: flex;
@@ -52,9 +60,10 @@ header nav ul li:hover {
 
 .background {
   background-image: linear-gradient(to bottom, #5c5c5c, #c291ff);
-  height: 60%;
+  height: 70%;
   width: 60%;
   margin: 1em;
+  padding: 10px;
   border-style: solid;
   border-color: black;
   border-width: .25em;
@@ -83,8 +92,12 @@ main section article:hover {
   align-items: center;
   flex-wrap: wrap; }
 
+@media (max-width: 768px) and (min-width: 350px) {
+  .background {
+    width: 90%; } }
+
 /* H's  */
-h1 {
+h1, h2, h4 {
   border: solid 3px #771acf;
   background-color: black;
   color: blueviolet;
@@ -94,9 +107,7 @@ h1 {
 
 h2 {
   text-decoration-color: black;
-  font-family: 'Orbitron', serif;
-  -ms-text-size-adjust: 10%;
-  text-align: center; }
+  -ms-text-size-adjust: 10%; }
 
 h3 {
   text-decoration-color: black;
@@ -106,20 +117,21 @@ h4 {
   border: solid 3px #771acf;
   background-color: black;
   color: blueviolet;
-  font-size: large;
-  font-family: 'Orbitron', serif;
-  text-align: center; }
+  font-size: large; }
+
+a {
+  text-decoration: none; }
 
 .reviews {
-  background-image: radial-gradient(#c291ff, #5c5c5c);
+  background-image: linear-gradient(to bottom, #5c5c5c, #c291ff);
   color: aliceblue;
   border-style: solid;
   border-color: black;
   border-radius: 50%;
   border-width: 2px;
   text-align: center;
-  width: 4em;
-  height: 4em;
+  width: 5em;
+  height: 5em;
   position: fixed;
   bottom: 2em;
   right: 2em;
@@ -139,6 +151,274 @@ h4 {
   border-style: solid;
   border-color: black;
   border-width: .25em; }
+
+.askFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+@media (max-width: 768px) and (min-width: 350px) {
+  .faqBackground {
+    background-image: linear-gradient(to bottom, #5c5c5c, #c291ff);
+    height: 30%;
+    width: 90%; } }
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  height: 850px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-around;
+  align-content: space-around; }
+
+/* portada */
+.div1 {
+  grid-area: 1 / 1 / 4 / 2;
+  border-color: #9e0edc;
+  border-style: solid;
+  border-width: 5px;
+  height: 635px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black; }
+
+.portada {
+  margin: 10%;
+  border-style: solid;
+  border-color: black;
+  border-width: 5em; }
+
+.introCollage {
+  background-image: linear-gradient(to bottom, #5c5c5c, #c291ff);
+  text-align: center;
+  margin-top: 20%; }
+
+/* book now */
+.div2 {
+  grid-area: 4 / 1 / 5 / 2;
+  border-color: #9e0edc;
+  border-style: solid;
+  border-width: 5px;
+  height: 200px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  background-color: black; }
+
+/* servicios */
+div article p {
+  margin-top: 20px; }
+
+#servicesBackCollage {
+  background-image: linear-gradient(to bottom, #5c5c5c, #c291ff); }
+
+#serviciosCollage {
+  display: flex;
+  align-self: flex-start; }
+
+/* 360 booth */
+.div3, .div4, .div5 {
+  grid-area: 1 / 2 / 2 / 3;
+  border-color: #9e0edc;
+  border-style: solid;
+  border-width: 5px;
+  height: 205px;
+  width: 405px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/* mirror booth */
+.div4 {
+  grid-area: 2 / 2 / 3 / 3; }
+
+/* infltatable */
+.div5 {
+  grid-area: 3 / 2 / 4 / 3; }
+
+/* ask us */
+.div6 {
+  grid-area: 4 / 2 / 5 / 4;
+  border-color: #9e0edc;
+  border-style: solid;
+  border-width: 5px;
+  background-color: black;
+  height: 200px;
+  width: 820px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.flexcollage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+#letrasCollage {
+  color: #070707;
+  text-align: left;
+  margin-right: 20px;
+  margin-top: .5px; }
+
+#askcollage {
+  background-image: linear-gradient(to bottom, #5c5c5c, #c291ff);
+  height: 140px;
+  width: 250px; }
+
+/* formulario */
+.div7 {
+  grid-area: 1 / 3 / 4 / 4;
+  border-color: #9e0edc;
+  border-style: solid;
+  border-width: 5px;
+  height: 635px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: black; }
+
+#formCollage {
+  height: 550px;
+  width: 350px;
+  background-image: linear-gradient(to bottom, #5c5c5c, #c291ff);
+  border-style: solid;
+  border-color: black;
+  border-width: .25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+@media (max-width: 768px) and (min-width: 350px) {
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; }
+  .header {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    padding: 10px;
+    background-color: black; }
+  nav {
+    width: 95vw; }
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1px; }
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    height: 2500px;
+    width: 95vw; }
+  .div1 {
+    grid-area: 1 / 1 / 3 / 2;
+    height: 500px;
+    width: 95vw;
+    display: flex;
+    align-items: center; }
+  .introCollage {
+    margin-top: 1%; }
+  .div2 {
+    grid-area: 3 / 1 / 4 / 2;
+    height: 250px;
+    width: 95vw; }
+  .div3, .div4, .div5 {
+    grid-area: 4 / 1 / 5 / 2;
+    height: 250px;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .div4 {
+    grid-area: 5 / 1 / 6 / 2;
+    height: 250px;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .div5 {
+    grid-area: 6 / 1 / 7 / 2;
+    height: 250px;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .div6 {
+    grid-area: 7 / 1 / 9 / 2;
+    height: 500px;
+    width: 95vw; }
+  .flexcollage {
+    flex-direction: column;
+    align-items: center; }
+  #askcollage {
+    background-image: linear-gradient(to bottom, #5c5c5c, #c291ff);
+    height: 125px;
+    width: 300px; }
+  .div7 {
+    grid-area: 9 / 1 / 11 / 2;
+    height: 500px;
+    width: 95vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center; }
+  #formCollage {
+    height: 400px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .flex-container {
+    display: flex;
+    direction: column;
+    justify-content: flex-start; }
+  .background {
+    height: 400px;
+    width: 95vw; }
+  .footerCollage {
+    width: 95vw; } }
+
+.btn {
+  background: #8f8896;
+  background-image: -webkit-linear-gradient(top, #8f8896, #0a090a);
+  background-image: -moz-linear-gradient(top, #8f8896, #0a090a);
+  background-image: -ms-linear-gradient(top, #8f8896, #0a090a);
+  background-image: -o-linear-gradient(top, #8f8896, #0a090a);
+  background-image: linear-gradient(to bottom, #8f8896, #0a090a);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #8f428f;
+  font-size: 40px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none; }
+
+.btn:hover {
+  background: #ededed;
+  text-decoration: none;
+  transform: scale(1.5, 1.5);
+  transition: transform .5s; }
 
 .footerCollage {
   border-style: solid;

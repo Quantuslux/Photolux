@@ -1,8 +1,9 @@
 .background {
     background-image: $background-block;    
-    height: 60%;
+    height: 70%;
     width: 60%;
     margin: 1em;
+    padding: 10px;
     border-style: solid;
     border-color: black;
     border-width: .25em;
@@ -27,3 +28,9 @@ main section article:hover{
 }
 
 
+
+@media (max-width: 768px) and (min-width: 350px) {
+    .background {
+        width: 90%;
+}
+}
