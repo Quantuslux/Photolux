@@ -144,8 +144,8 @@ a {
   display: flex;
   align-items: center;
   transform: rotate(30deg);
-  transition: .5s; 
-}
+  transition: .5s; }
+
 .reviews:hover {
   transform: scale(1.2, 1.2); }
 
