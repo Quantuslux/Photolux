@@ -1,9 +1,14 @@
+/*background image and background image hover*/
+/*typography*/
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+/*flex mixin*/
+/*Reset*/
 * {
   margin: 0 auto;
   padding: 0 auto;
   box-sizing: border-box; }
 
+/*carousel bootstrap*/
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.251); }
 
@@ -15,7 +20,6 @@
 /* HEADER */
 .header {
   display: flex;
-  width: 100vw;
   padding: 10px;
   background-color: black; }
   .header nav {
@@ -58,6 +62,7 @@ header nav ul li:hover {
     justify-content: center;
     align-items: center; } }
 
+/*main blocks*/
 .background {
   background-image: linear-gradient(to bottom, #5c5c5c, #c291ff);
   height: 70%;
@@ -122,6 +127,7 @@ h4 {
 a {
   text-decoration: none; }
 
+/*Reviews*/
 .reviews {
   background-image: linear-gradient(to bottom, #5c5c5c, #c291ff);
   color: aliceblue;
@@ -143,6 +149,7 @@ a {
 .reviews:hover {
   transform: scale(1.2, 1.2); }
 
+/*ask us*/
 .faqBackground {
   background-image: linear-gradient(to bottom, #5c5c5c, #c291ff);
   height: 160px;
@@ -165,6 +172,7 @@ a {
     height: 30%;
     width: 90%; } }
 
+/*grid*/
 .parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -398,6 +406,7 @@ div article p {
   .footerCollage {
     width: 95vw; } }
 
+/*book now bootstrap*/
 .btn {
   background: #8f8896;
   background-image: -webkit-linear-gradient(top, #8f8896, #0a090a);
@@ -420,6 +429,7 @@ div article p {
   transform: scale(1.5, 1.5);
   transition: transform .5s; }
 
+/*footer*/
 .footerCollage {
   border-style: solid;
   border-color: black;
