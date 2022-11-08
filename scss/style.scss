@@ -11,7 +11,19 @@
 @import"./layout/gridcollage";
 @import "./components/butons";
 @import"./layout/footer";
+@media (min-width: 350px)  { 
+    .background {
+            width: 90%;
+            @include flex (column,space-between,center)
+     }   
+}
+@media (max-width: 768px) {
+    .background {
+        width: 90%;
+        @include flex (column,space-between,center)
+ }   
 
+}
 
 
 

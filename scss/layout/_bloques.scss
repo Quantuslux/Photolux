@@ -9,7 +9,7 @@
     border-style: solid;
     border-color: black;
     border-width: .25em;
-    @include flex (column,space-around,center)   
+    @include flex (column,space-between,center)   
 }
 
 main section article:hover{
@@ -31,8 +31,8 @@ main section article:hover{
 
 
 
-@media (max-width: 768px) and (min-width: 350px) {
-    .background {
-        width: 90%;
-}
-}
+// @media (max-width: 768px) and (min-width: 350px) {
+//     .background {
+//         width: 90%;
+// }
+// }

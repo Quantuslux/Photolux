@@ -20,10 +20,9 @@
 /* HEADER */
 .header {
   display: flex;
-  padding: 10px;
   background-color: black; }
   .header nav {
-    width: 100vw; }
+    width: 60%; }
     .header nav .lista li {
       list-style-type: none;
       margin: .5em;
@@ -41,8 +40,7 @@
 
 .navBar {
   display: flex;
-  justify-content: flex-end;
-  column-gap: 5px; }
+  justify-content: flex-end; }
 
 header nav ul li:hover {
   transform: scale(1.2, 1.2); }
@@ -74,7 +72,7 @@ header nav ul li:hover {
   border-width: .25em;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center; }
 
 main section article:hover {
@@ -96,10 +94,6 @@ main section article:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
-
-@media (max-width: 768px) and (min-width: 350px) {
-  .background {
-    width: 90%; } }
 
 /* H's  */
 h1, h2, h4 {
@@ -224,6 +218,9 @@ a {
   background-color: black; }
 
 /* servicios */
+.imggridserv {
+  width: 30%; }
+
 div article p {
   margin-top: 20px; }
 
@@ -325,7 +322,7 @@ div article p {
     flex-direction: column;
     width: 95vw;
     padding: 10px;
-    background-color: black; }
+    background-color: #0e0d0d; }
   nav {
     width: 95vw; }
   .navBar {
@@ -446,3 +443,19 @@ div article p {
 footer section a:hover {
   transform: scale(1.5, 1.5);
   transition: transform .5s; }
+
+@media (min-width: 350px) {
+  .background {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; } }
+
+@media (max-width: 768px) {
+  .background {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; } }
